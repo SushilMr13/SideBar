@@ -15,18 +15,59 @@
                   <i class="bx bxs-car"></i>
                   <span>CodeCar</span>
             </div>
-            <i class="bx bx-menu"></i>
-
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div class="user">
+            <img src="ST-logo.jpg" alt="logo" class="user-img">
+            <div>
+                <P class="bold">Sushil Tiwari</P>
+                <p>Admin</p>
+            </div>
         </div>
         <ul>
             <li>
                 <a href="#">
-                    <i class="bx bxs-grid-alt">
-                    <span class="nav-item"></span>
-                    </i>
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">DashBoard</span>
                 </a>
+                <span class="tooltip">DashBoard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-car-garage"></i>
+                    <span class="nav-item">Cars</span>
+                </a>
+                <span class="tooltip">Cars</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-food-menu"></i>
+                    <span class="nav-item">Specs</span>
+                </a>
+                <span class="tooltip">Specs</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-contact"></i>
+                    <span class="nav-item">Contact</span>
+                </a>
+                <span class="tooltip">Contact</span>
             </li>
         </ul>
     </div>
+    <div class="main-content">
+        <div class="container">
+            <h1>Main Page</h1>
+        </div>
+    </div>
 </body>
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function () {
+        sidebar.classList.toggle('active')
+    };
+
+</script>
 </html>
